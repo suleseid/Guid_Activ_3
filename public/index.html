@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial</title>
+     <!-- Link Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+        <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <!-- This is the button that only appears when the on a small screen  -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- These links will hide on a small screen but be present on a large one -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <!--next we have to create a row using dev class-->
+    <div class="row">
+       <!-- Place elements in the row and specify how many columns they should occupy -->
+       <!-- There are 12 columns available -->
+       <div class="col-12">
+           <h1>Bootstrap Tutorial</h1>
+           <p>This is a hand-on tutorial for Bootstrap.
+       </div>
+    </div>
+    <div class="row bg-light">
+        <div class="col-sm-6">
+            <h2>Grid helps position elements</h2>
+            <p>
+                Here we have elements that take up 6 columns each next to each other
+                on a larger screen. If the screen is smaller, they stack on top of
+                each other. The sm controls when the elements will stack. 
+            </p>
+        </div>
+    </div>
+    <!-- since md was used here these will stack at a larger size than sm -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Column 1</h2>
+      <p>This is the content of column 1.</p>
+    </div>
+    <div class="col-md-4">
+      <h2>Column 2</h2>
+      <p>This is the content of column 2.</p>
+    </div>
+    <div class="col-md-4">
+      <h2>Column 3</h2>
+      <p>This is the content of column 3.</p>
+    </div>
+           <!-- Bootstrap Buttons -->
+  <button class="btn btn-primary">Primary Button</button>
+  <button class="btn btn-secondary">Secondary Button</button>
+  <button class="btn btn-outline-primary">Outline Success</button>
+
+  <!-- Bootstrap Alert -->
+   <div class="alert alert-success" role="alert">
+      This is a success alert.
+   </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
